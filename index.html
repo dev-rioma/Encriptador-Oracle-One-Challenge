@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Style/index.css">
+    <title>Encriptador Alura</title>
+</head>
+
+<body>
+    <main>
+        <!-- contenedor izquierdo -->
+        <div class="container-left">
+            <img class="logo" src="./assets/logoAlura.svg" alt="logo" />
+            <div class="container-input-buttons">
+                <textarea id="input-text" placeholder="Ingresa el texto aqui"></textarea>
+                <div>
+                    <img class="frame" src="./assets/Frame.svg" alt="frame">
+                    <div class="container-btns">
+                        <button id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                        <button id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contenedor derecho -->
+        <div class="container-rigth">
+            <img class="image-notfound" src="./assets/Muñeco.svg" alt="Muñeco" />
+            <h1 class="title-found">Ningun mensaje fue encontrado</h1>
+            <p class="text-anuncefound">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <p id="response-text">respuesta</p>
+            <button id="copy-btn" onclick="copiar()">
+              Copiar
+            </button>
+        </div>
+    </main>
+</body>
+<script src="./Encriptador.js"></script>
+<script src="./desenciptar.js"></script>
+<script src="./copy.js"></script>
+
+</html>
