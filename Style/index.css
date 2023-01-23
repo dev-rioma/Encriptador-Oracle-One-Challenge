@@ -52,6 +52,8 @@ main {
     height: 100vh;
     padding: 2.5% 2.5%;
     box-sizing: border-box;
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
 
 .container-rigth {
@@ -134,6 +136,11 @@ main {
     color: #FFFFFF;
 }
 
+#btn-encriptar:hover {
+    transform: scale(110%);
+    box-shadow: 5px 5px 10px var(--DarkBlue300);
+}
+
 #btn-desencriptar {
     width: 328px;
     height: 67px;
@@ -143,6 +150,11 @@ main {
     border: 1px solid var(--DarkBlue300);
     border-radius: 24px;
     color: var(--DarkBlue300);
+}
+
+#btn-desencriptar:hover {
+    transform: scale(110%);
+    box-shadow: 5px 5px 10px var(--Gray500);
 }
 
 #copy-btn {
@@ -187,6 +199,18 @@ main {
     overflow-y: auto;
     overflow-x: hidden;
     justify-content: center;
+}
+
+
+/* animacion */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
